@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="58892SumitMaitra.TheLazyBlogger" Version="1.0.0.1" Publisher="CN=66E31B70-3C50-4C02-A993-2C9C7D304758" />
+  <Properties>
+    <DisplayName>The LazyBlogger</DisplayName>
+    <Description>The LazyBlogger</Description>
+    <PublisherDisplayName>iSmart Software Solutions Pvt. Ltd.</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.0</OSMinVersion>
+    <OSMaxVersionTested>6.2.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="The LazyBlogger" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Ramblings of Sumit! (a father, a husband, a geek, not necessarily in that order)." ForegroundText="dark" BackgroundColor="#ffffff">
+        <DefaultTile ShowName="noLogos" WideLogo="images\widelogo.png" ShortName="TheLazyBlogger" />
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="#9cb1c0" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.search" />
+        <Extension Category="windows.backgroundTasks" StartPage="js\liveTileTask.js">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

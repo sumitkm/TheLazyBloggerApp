@@ -1,0 +1,33 @@
+﻿h1, h2, h3, h4, h5, h6, .mp-color-header, progress.win-ring { 
+color: #1870c4;
+}
+header .win-backbutton {
+border-color: #1870c4 !important;
+color:#1870c4 !important;
+}
+.win-container:hover {
+ outline-color: #1870c4 !important;
+}
+.mp-color-subtitle {
+color: #000000;
+}
+.mp-color-title, .win-header .win-backbutton {
+color: #ffffff !important;
+border-color: #ffffff !important;
+}
+.mp-bg-overlay {
+background-color:#3399CC !important;
+}              
+ body, .mp-bg-main { 
+background-color:#cadbe5 !important; 
+} 
+ .wp-post, .wpc-post,  .mp-bg-plain { 
+background-color:#d0d0d0 !important; 
+} 
+ .wp-post, .wpc-post, .mp-color-text { 
+color:#000000 !important; 
+} 
+ .mp-color-link, a, a:link, a:visited, a:active, article a:hover { 
+color:#1448cb !important; 
+} 
+
